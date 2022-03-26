@@ -81,7 +81,7 @@
             <h2>Sobre Mi</h2>
             <div class="about-me-container">
                 <div class="about-img-container">
-                    <img src="./assets/porfile.jpg" alt="Foto-perfil" />
+                    <img src="./assets/porfile.jpg" alt="Foto-perfil" loading="lazy" />
                 </div>
                 <div class="about-text-container">
                     <p>
@@ -96,9 +96,9 @@
         <section id="projects" class="projects">
             <h2>Proyectos</h2>
             <div class="projects-container">
-                <article class="project">
+                <article data-aos="zoom-in" class="project">
                     <div class="project-img-container">
-                        <img src="https://cdn.pixabay.com/photo/2016/11/30/18/14/chat-1873536_960_720.png" alt="Chat-Node" />
+                        <img src="https://imagenes-pages.s3-sa-east-1.amazonaws.com/SlideShow.png" width="100" height="40" alt="Chat-Node" />
                     </div>
                     <div class="project-description">
                         <div class="project-back">
@@ -110,129 +110,186 @@
                                 <!--Demo-->
                                 <a href="#" title="demo"><i class="fas fa-desktop"></i></a>
                             </div>
-                        </div class="project-content">
-                        <h2>Chat with Node 😄</h2>
-                        <div>
-                            <ul class="project-habilities">
-                                <li>Javascript</li>
-                                <li>nodeJs</li>
-                                <li>html </li>
-                            </ul>
                         </div>
                     </div>
+                    <div class="project-content">
+
+                        <h2>Chat with Node</h2>
+                        <ul class="project-tools">
+                            <li>JavaScript</li>
+                            <li>NodeJs</li>
+                            <li>HTML</li>
+                        </ul>
+                    </div>
+
                 </article>
-
-            </div>
-        </section>
-        <section></section>
-
-        <!-- Hard skils -->
-        <section id="habilidades" class="habilidades">
-
-            <h2>Tech Skils</h2>
-            <div class="habilidades-container">
-                <div data-aos="fade-up" data-aos-duration="300" class="technologies">
-                    <div class="technologies-image">
-                        <img src="https://img.icons8.com/color/480/000000/nodejs.png" alt="NodeJs">
+                <article class="project" data-aos="zoom-in">
+                    <div class="project-img-container">
+                        <img src="./assets/lofi.gif" alt="Chat-Node" loading="lazy" />
                     </div>
-                    <h4>NodeJs</h4>
-                </div>
-                <div data-aos="fade-up" data-aos-duration="600" class="technologies">
-                    <div class="technologies-image">
-                        <img src="https://img.icons8.com/color/480/000000/mongodb.png" alt="MongoDB">
-                    </div>
-                    <h4>MongoDB</h4>
-                </div>
-                <div data-aos="fade-up" data-aos-duration="900" class="technologies">
-                    <div class="technologies-image">
-                        <img src="https://img.icons8.com/color/480/000000/html-5--v1.svg" alt="Html5">
-                    </div>
-                    <h4>HTML5</h4>
-                </div>
-                <div data-aos="fade-up" data-aos-duration="1200" class="technologies">
-                    <div class="technologies-image">
-                        <img src="https://img.icons8.com/color/480/000000/css3.png" alt="Css">
-                    </div>
-                    <h4>CSS</h4>
-                </div>
-                <div data-aos="fade-up" data-aos-duration="1500" class="technologies">
-                    <div class="technologies-image">
-                        <img src="https://img.icons8.com/color/480/000000/javascript--v1.png" alt="Javascript">
-                    </div>
-                    <h4>JavaScript</h4>
-                </div>
-                <div data-aos="fade-up" data-aos-duration="1800" class="technologies">
-                    <div class="technologies-image">
-                        <img src="https://img.icons8.com/color/480/000000/angularjs.png" alt="Angularjs">
-                    </div>
-                    <h4>AngularJs</h4>
-                </div>
-                <div data-aos="fade-up" data-aos-duration="300" class="technologies">
-                    <div class="technologies-image">
-                        <img src="https://img.icons8.com/color/480/000000/git.png" alt="Git">
-                    </div>
-                    <h4>Git</h4>
-                </div>
-                <div data-aos="fade-up" data-aos-duration="600" class="technologies">
-                    <div class="technologies-image">
-                        <img src="https://img.icons8.com/plasticine/480/000000/github.png" alt="Github">
-                    </div>
-                    <h4>Github</h4>
-                </div>
-
-                <div data-aos="fade-up" data-aos-duration="900" class="technologies">
-                    <div class="technologies-image">
-                        <img src="https://img.icons8.com/ios-filled/480/000000/jquery.png" alt="Jquery">
-                    </div>
-                    <h4>Jquery</h4>
-                </div>
-                <div data-aos="fade-up" data-aos-duration="1200" class="technologies">
-                    <div class="technologies-image">
-                        <img src="https://img.icons8.com/color/480/000000/npm.png" alt="Npm">
-                    </div>
-                    <h4>Npm</h4>
-                </div>
-                <div data-aos="fade-up" data-aos-duration="1500" class="technologies">
-                    <div class="technologies-image">
-                        <img src="https://img.icons8.com/color/480/000000/java-coffee-cup-logo--v1.png" alt="Java">
-                    </div>
-                    <h4>Java</h4>
-                </div>
-                <div data-aos="fade-up" data-aos-duration="1800" class="technologies">
-                    <div class="technologies-image">
-                        <img src="https://img.icons8.com/office/480/000000/mysql.png" alt="mysql">
-                    </div>
-                    <h4>Mysql</h4>
-                </div>
-            </div>
-        </section>
-        <!-- Contacto -->
-        <section id="contacto" class="contacto">
-            <h2>Contacto</h2>
-            <div class="contacto-container">
-                <p>Estoy siempre abierto a aprender, además estoy buscando mi primera oportunidad como desarrollador BackEnd y/o FrontEnd! Si crees que mi perfil se adapta con lo que buscas, ¡no dudes en contactarme!</p>
-                <div class="contacto-icons">
-                    <a href="mailto:enrissmuelo@gmail.com">
-                        <div>
-                            <i class="fas fa-envelope"></i>
-                            <p>Email</p>
+                    <div class="project-description">
+                        <div class="project-back">
+                            <p>
+                                <span> Chat_with_nodJS</span> A simple chat app using sockets and nodeJs
+                            </p>
+                            <div class="project-links">
+                                <a href="https://github.com/Samuel0023/chat_with_nodJS" title="git"><i class="fab fa-github"></i></a>
+                                <!--Demo-->
+                                <a href="#" title="demo"><i class="fas fa-desktop"></i></a>
+                            </div>
                         </div>
-                    </a>
-                    <a href="https://www.linkedin.com/in/samuelOnti/" target="_blank" title="linkedin">
-                        <div>
-                            <i class="fab fa-linkedin"></i>
-                            <p>LinkedIn</p>
+                    </div>
+                    <div class="project-content">
+
+                        <h2>Chat with Node 😄</h2>
+                        <ul class="project-tool">
+                            <li>Javascript</li>
+                            <li>nodeJs</li>
+                            <li>html </li>
+                        </ul>
+                    </div>
+
+                </article>
+                <article class="project" data-aos="zoom-in">
+                    <div class="project-img-container">
+                        <img src="https://i0.wp.com/soytecno.com/wp-content/uploads/2017/07/Las-mejores-apps-para-ver-el-clima.jpg?fit=1200%2C800&ssl=1" alt="Chat-Node" />
+                    </div>
+                    <div class="project-description">
+                        <div class="project-back">
+                            <p>
+                                <span> Chat With NodJS</span> A simple chat app using sockets and nodeJs
+                            </p>
+                            <div class="project-links">
+                                <a href="https://github.com/Samuel0023/chat_with_nodJS" title="git"><i class="fab fa-github"></i></a>
+                                <!--Demo-->
+                                <a href="#" title="demo"><i class="fas fa-desktop"></i></a>
+                            </div>
                         </div>
-                    </a>
+                    </div>
+                    <div class="project-content">
+
+                        <h2>Chat with Node</h2>
+                        <ul class="project-tool">
+                            <li>Javascript</li>
+                            <li>nodeJs</li>
+                            <li>html </li>
+                        </ul>
+                    </div>
+
+                </article>
+            </div>
+
+    </div>
+    </section>
+    <section></section>
+
+    <!-- Hard skils -->
+    <section id="habilidades" class="habilidades">
+
+        <h2>Tech Skils</h2>
+        <div class="habilidades-container">
+            <div data-aos="fade-up" data-aos-duration="300" class="technologies">
+                <div class="technologies-image">
+                    <img src="https://img.icons8.com/color/480/000000/nodejs.png" alt="NodeJs" loading="lazy">
                 </div>
+                <h4>NodeJs</h4>
             </div>
-        </section>
-        <!-- Footer -->
-        <footer>
-            <div class="footer-container">
-                <p>Never stop learning!! - <span id="year"></span></p>
+            <div data-aos="fade-up" data-aos-duration="600" class="technologies">
+                <div class="technologies-image">
+                    <img src="https://img.icons8.com/color/480/000000/mongodb.png" alt="MongoDB" loading="lazy">
+                </div>
+                <h4>MongoDB</h4>
             </div>
-        </footer>
+            <div data-aos="fade-up" data-aos-duration="900" class="technologies">
+                <div class="technologies-image">
+                    <img src="https://img.icons8.com/color/480/000000/javascript--v1.png" alt="Javascript" loading="lazy">
+                </div>
+                <h4>JavaScript</h4>
+            </div>
+            <div data-aos="fade-up" data-aos-duration="1200" class="technologies">
+                <div class="technologies-image">
+                    <img src="https://img.icons8.com/color/480/000000/css3.png" alt="Css" loading="lazy">
+                </div>
+                <h4>CSS</h4>
+            </div>
+            <div data-aos="fade-up" data-aos-duration="1500" class="technologies">
+                <div class="technologies-image">
+                    <img src="https://img.icons8.com/color/480/000000/html-5--v1.svg" alt="Html5" loading="lazy">
+                </div>
+                <h4>HTML5</h4>
+            </div>
+            <div data-aos="fade-up" data-aos-duration="1800" class="technologies">
+                <div class="technologies-image">
+                    <img src="https://img.icons8.com/color/480/000000/angularjs.png" alt="Angularjs" loading="lazy">
+                </div>
+                <h4>AngularJs</h4>
+            </div>
+            <div data-aos="fade-up" data-aos-duration="300" class="technologies">
+                <div class="technologies-image">
+                    <img src="https://img.icons8.com/color/480/000000/git.png" alt="Git" loading="lazy">
+                </div>
+                <h4>Git</h4>
+            </div>
+            <div data-aos="fade-up" data-aos-duration="600" class="technologies">
+                <div class="technologies-image">
+                    <img src="https://img.icons8.com/plasticine/480/000000/github.png" alt="Github" loading="lazy">
+                </div>
+                <h4>Github</h4>
+            </div>
+
+            <div data-aos="fade-up" data-aos-duration="900" class="technologies">
+                <div class="technologies-image">
+                    <img src="https://img.icons8.com/ios-filled/480/000000/jquery.png" alt="Jquery" loading="lazy">
+                </div>
+                <h4>Jquery</h4>
+            </div>
+            <div data-aos="fade-up" data-aos-duration="1200" class="technologies">
+                <div class="technologies-image">
+                    <img src="https://img.icons8.com/color/480/000000/npm.png" alt="Npm" loading="lazy">
+                </div>
+                <h4>Npm</h4>
+            </div>
+            <div data-aos="fade-up" data-aos-duration="1500" class="technologies">
+                <div class="technologies-image">
+                    <img src="https://img.icons8.com/color/480/000000/java-coffee-cup-logo--v1.png" alt="Java" loading="lazy">
+                </div>
+                <h4>Java</h4>
+            </div>
+            <div data-aos="fade-up" data-aos-duration="1800" class="technologies">
+                <div class="technologies-image">
+                    <img src="https://img.icons8.com/office/480/000000/mysql.png" alt="mysql" loading="lazy">
+                </div>
+                <h4>Mysql</h4>
+            </div>
+        </div>
+    </section>
+    <!-- Contacto -->
+    <section id="contacto" class="contacto">
+        <h2>Contacto</h2>
+        <div class="contacto-container">
+            <p>Estoy siempre abierto a aprender, además estoy buscando mi primera oportunidad como desarrollador BackEnd y/o FrontEnd! Si crees que mi perfil se adapta con lo que buscas, ¡no dudes en contactarme!</p>
+            <div class="contacto-icons">
+                <a href="mailto:enrissmuelo@gmail.com">
+                    <div>
+                        <i class="fas fa-envelope"></i>
+                        <p>Email</p>
+                    </div>
+                </a>
+                <a href="https://www.linkedin.com/in/samuelOnti/" target="_blank" title="linkedin">
+                    <div>
+                        <i class="fab fa-linkedin"></i>
+                        <p>LinkedIn</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+    <!-- Footer -->
+    <footer>
+        <div class="footer-container">
+            <p>Never stop learning!! - <span id="year"></span></p>
+        </div>
+    </footer>
 
 
 </body>

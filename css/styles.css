@@ -425,11 +425,11 @@ ul {
     margin-bottom: .5rem;
 }
 
-.project-habilities {
+.project-tools {
     display: flex;
 }
 
-.project-habilities>li {
+.project-tools>li {
     font-size: 1rem;
     margin-right: 1rem;
     color: var(--text);
@@ -722,7 +722,7 @@ footer {
     .project-content>h2 {
         font-size: 1.4rem;
     }
-    .project-habilities>li {
+    .project-tools>li {
         font-size: 1rem;
     }
     /* Habilidades */
@@ -956,7 +956,7 @@ footer {
     .project-content>h2 {
         font-size: 1.65rem;
     }
-    .project-habilities>li {
+    .project-tools>li {
         font-size: 1.25rem;
     }
     .skew-projects {
