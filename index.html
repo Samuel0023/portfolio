@@ -11,26 +11,34 @@
 </head>
 
 <body>
-    <div>
-        <header>
-            <ul>
-                <li><a href="#">Sobre mi</a></li>
-                <li><a href="#">Proyectos</a></li>
-                <li><a href="#">Contacto</a></li>
+    <div class="container">
+        <!-- Header -->
+        <header class="header">
+            <ul class="header-container">
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#sobre-mi">Sobre mi</a></li>
+                <li><a href="#proyectos">Proyectos</a></li>
+                <li><a href="#habilidades">Habilidades</a></li>
+                <li><a href="#contacto">Contacto</a></li>
             </ul>
         </header>
-        <section>
-            <h1>¡Hola! Soy Samuel!
-                <span>Junior Backend developer</span> y me gusta
-                <span>resolver problemas</span>
-            </h1>
-            <ul>
-                <li><i class="fas fa-file-export"></i></li>
-                <li><i class="fab fa-github-square"></i></li>
-                <li><i class="fab fa-linkedin"></i></li>
-            </ul>
+        <!-- Hero -->
+        <section id="inicio" class="hero">
+            <div>
+                <h1>¡Hola! Soy Samuel!
+                    <span>Junior Backend developer</span> y me gusta
+                    <span>resolver problemas</span>
+                </h1>
+                <ul>
+                    <li><i class="fas fa-file-export"></i></li>
+                    <li><i class="fab fa-github-square"></i></li>
+                    <li><i class="fab fa-linkedin"></i></li>
+                </ul>
+            </div>
+
         </section>
-        <section>
+        <!-- Sobre mi -->
+        <section id="sobre-mi" class="about-me">
             <div>
                 <div>
                     <img src="./assets/porfile.jpg" alt="Foto-perfil" />
@@ -44,7 +52,8 @@
                 </div>
             </div>
         </section>
-        <section>
+        <!-- Proyectos -->
+        <section id="proyectos">
             <h2>Proyectos</h2>
             <div>
                 <article>
@@ -61,7 +70,7 @@
                                 <a href="#">Ver Demo</a>
                             </div>
                         </div>
-                        <h2>Chat whit Node :)</h2>
+                        <h2>Chat with Node :)</h2>
                         <div>
                             <ul>
                                 <li>Javascript</li>
