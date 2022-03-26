@@ -1,68 +1,104 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
+
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale= 1.0">
+    <link type="image/png" sizes="16x16" rel="icon" href="https://img.icons8.com/external-tulpahn-outline-color-tulpahn/64/000000/external-student-back-to-school-tulpahn-outline-color-tulpahn.png">
     <title>Samuel Ontiveros | Backend Developer</title>
     <link rel="stylesheet" href="./css/styles.css">
-    <script src="https://kit.fontawesome.com/23192939c8.js" crossorigin="anonymous"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script defer src="https://kit.fontawesome.com/23192939c8.js" crossorigin="anonymous"></script>
+    <script defer src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+    <script defer src="./js/app.js"></script>
 </head>
 
 <body>
+
+    <div id="particles-js" class="animation"> </div>
     <div class="container">
-        <div id="particles-js" class="animation"></div>
         <!-- Header -->
-        <header class="header">
-            <ul class="header-container">
-                <li><a href="#inicio">Inicio</a></li>
-                <li><a href="#sobre-mi">Sobre mi</a></li>
-                <li><a href="#projects">Proyectos</a></li>
-                <li><a href="#habilidades">Habilidades</a></li>
-                <li><a href="#contacto">Contacto</a></li>
+        <header id="header" class="header">
+            <!--Mobile-->
+            <div class="menu-mobile">
+                <div>
+                    <a id="btnMenu"><i class="fas fa-bars"></i></a>
+                </div>
+                <nav class="menu-side">
+                    <a id="start-menu" href="#inicio">Inicio</a>
+                    <a id="about-me-menu" href="#sobre-mi">Sobre mi</a>
+                    <a id="proyects-menu" href="#projects">Proyectos</a>
+                    <a id="hability-menu" href="#habilidades">Habilidades</a>
+                    <a id="contact-menu" href="#contacto">Contacto</a>
+                </nav>
+            </div>
+            <!-- Escritorio - fijo -->
+            <div id="fixed-header" class="header-fixed">
+                <ul>
+                    <li><a class="start" href="#inicio">Inicio</a></li>
+                    <li><a class="aboutMe" href="#sobre-mi">Sobre mi</a></li>
+                    <li><a class="proyects" href="#projects">Proyectos</a></li>
+                    <li><a class="hability" href="#habilidades">Habilidades</a></li>
+                    <li><a class="contact" href="#contacto">Contacto</a></li>
+                </ul>
+            </div>
+
+            <!-- Escritorio -->
+            <ul id="header-container" class="header-container">
+                <li><a class="start" href="#inicio">Inicio</a></li>
+                <li><a class="aboutMe" href="#sobre-mi">Sobre mi</a></li>
+                <li><a class="proyects" href="#projects">Proyectos</a></li>
+                <li><a class="hability" href="#habilidades">Habilidades</a></li>
+                <li><a class="contact" href="#contacto">Contacto</a></li>
             </ul>
         </header>
         <!-- Hero -->
         <section id="inicio" class="hero">
-            <h6>&#160;<span class="typed"></span></h6>
             <div class="hero-container">
-                <h1>¡Hola! Soy Samuel 👨🏽‍💻!
-                    <span class="hero-span">Junior Backend developer</span> y me gusta
-                    <span class="hero-styles">resolver problemas</span>
+                <h1>¡Hola! Soy Samuel 👋🏾👨🏽‍💻, soy
+                    <span class="hero-span">Junior FullStack Developer</span> y me gusta
+                    <span class="hero-styles" id="likes"></span>
                 </h1>
-                <ul>
-                    <li>
-                        <a href="./assets/cv.samuel_ontiveros.pdf" target=" _blank ">Resume</a><i class="fas fa-file-export "></i></li>
-                    <li><i class="fab fa-github-square "></i></li>
-                    <li><i class="fab fa-linkedin "></i></li>
-                </ul>
             </div>
+            <div>
+                <div class="skew"></div>
+            </div>
+            <ul class="icons-container">
+                <li><a href="./assets/cv.samuel_ontiveros.pdf" target=" _blank">Resume <i class="fas fa-file-export"></i></a></li>
+                <li>
+                    <a href="https://github.com/Samuel0023" target="_blank">GitHub <i class="fab fa-github-square"></i></a></li>
+                <li>
+                    <a href="https://www.linkedin.com/in/samuelOnti/" target="_blank">LinkedIn<i class="fab fa-linkedin"></i></a></li>
+            </ul>
+
 
         </section>
         <!-- Sobre mi -->
-        <section id="sobre-mi" class="about-me ">
-            <h2>Sobre mi</h2>
+        <section id="sobre-mi" class="about-me">
+            <h2>Sobre Mi</h2>
             <div class="about-me-container">
-                <div class="about-img-container ">
-                    <img src="./assets/porfile.jpg " alt="Foto-perfil " />
+                <div class="about-img-container">
+                    <img src="./assets/porfile.jpg" alt="Foto-perfil" />
                 </div>
-                <div class="about-text-container ">
-                    <h2>Hola <span>👋🏾</span></h2>
+                <div class="about-text-container">
                     <p>
-                        Mi nombre es <span>Samuel Ontiveros.</span> Como muchos, me sentí atraido por el mundo de la informatica, actualmente estoy cursando la carrera de Ingenieria en Sistemas de Informacion en la UTN-frba,asi como tambien sigo aorendiendo
-                        por mi cuenta acerca del mundo del desarrollo web, apasionado por el Diseño y las buenas Practicas (SOLID), enfocandome más en el <span>Back End.</span>, con cursos online y investigando la documentacion publicada.
+                        Mi nombre es <span>Samuel Ontiveros.</span> Como muchos, me sentí atraido por el mundo de la informatica, actualmente estoy cursando la carrera de Ingenieria en Sistemas de Información en lA Universidad Tecnológica Nacional (UTN-FRBA),
+                        así como tambien sigo aprendiendo por mi cuenta acerca del mundo del Desarrollo Web, apasionado por el Diseño y las buenas Practicas (SOLID), enfocandome más en el <span>Back End.</span>, con cursos online y investigando la documentacion
+                        publicada.
                     </p>
                 </div>
             </div>
         </section>
         <!-- Proyectos -->
-        <section id="projects" class="projects ">
+        <section id="projects" class="projects">
             <h2>Proyectos</h2>
             <div class="projects-container">
                 <article class="project">
                     <div class="project-img-container">
-                        <img src="https://cdn.pixabay.com/photo/2016/11/30/18/14/chat-1873536_960_720.png" alt="Chat-Node " />
+                        <img src="https://cdn.pixabay.com/photo/2016/11/30/18/14/chat-1873536_960_720.png" alt="Chat-Node" />
                     </div>
                     <div class="project-description">
                         <div class="project-back">
@@ -72,7 +108,7 @@
                             <div class="project-links">
                                 <a href="https://github.com/Samuel0023/chat_with_nodJS" title="git"><i class="fab fa-github"></i></a>
                                 <!--Demo-->
-                                <a href="# " title="demo"><i class="fas fa-desktop"></i></a>
+                                <a href="#" title="demo"><i class="fas fa-desktop"></i></a>
                             </div>
                         </div class="project-content">
                         <h2>Chat with Node 😄</h2>
@@ -89,120 +125,116 @@
             </div>
         </section>
         <section></section>
-    </div>
 
-    <!-- Hard skils -->
-    <section id="habilidades" class="habilities">
+        <!-- Hard skils -->
+        <section id="habilidades" class="habilidades">
 
-        <h2>Habilidades</h2>
-        <div class="habilidades-containers">
-            <div class="technologies">
-                <div class="technologies-image">
-                    <img src="https://img.icons8.com/color/480/000000/nodejs.png " alt="NodeJs ">
-                </div>
-                <h4>NodeJs</h4>
-            </div>
-            <div class="technologies">
-                <div class="technologies-image mongodb">
-                    <img src="https://img.icons8.com/color/480/000000/mongodb.png" alt="MongoDB ">
-                </div>
-                <h4>MongoDB</h4>
-            </div>
-            <div class="technologies">
-                <div class="technologies-image">
-                    <img src="https://img.icons8.com/color/480/000000/html-5--v1.svg " alt="Html5 ">
-                </div>
-                <h4>Html5</h4>
-            </div>
-            <div class="technologies">
-                <div class="technologies-image">
-                    <img src="https://img.icons8.com/color/480/000000/css3.png " alt="Css ">
-                </div>
-                <h4>Css</h4>
-            </div>
-            <div class="technologies">
-                <div class="technologies-image">
-                    <img src="https://img.icons8.com/color/480/000000/javascript--v1.png " alt="Javascript ">
-                </div>
-                <h4>Javascript</h4>
-            </div>
-            <div class="technologies">
-                <div class="technologies-image">
-                    <img src="https://img.icons8.com/color/480/000000/angularjs.png " alt="Angularjs ">
-                </div>
-                <h4>AngularJs</h4>
-            </div>
-            <div class="technologies">
-                <div class="technologies-image">
-                    <img src="https://img.icons8.com/color/480/000000/git.png " alt="Git ">
-                </div>
-                <h4>Git</h4>
-            </div>
-            <div class="technologies">
-                <div class="technologies-image">
-                    <img src="https://img.icons8.com/plasticine/480/000000/github.png " alt="Github ">
-                </div>
-                <h4>Github</h4>
-            </div>
-
-            <div class="technologies">
-                <div class="technologies-image">
-                    <img src="https://img.icons8.com/ios-filled/480/000000/jquery.png " alt="Jquery ">
-                </div>
-                <h4>Jquery</h4>
-            </div>
-            <div class="technologies">
-                <div class="technologies-image">
-                    <img src="https://img.icons8.com/color/480/000000/npm.png " alt="Npm ">
-                </div>
-                <h4>Npm</h4>
-            </div>
-            <div class="technologies">
-                <div class="technologies-image">
-                    <img src="https://img.icons8.com/color/480/000000/java-coffee-cup-logo--v1.png " alt="Java ">
-                </div>
-                <h4>Java</h4>
-            </div>
-            <div class="technologies">
-                <div class="technologies-image">
-                    <img src="https://img.icons8.com/office/480/000000/mysql.png " alt="mysql ">
-                </div>
-                <h4>Mysql</h4>
-            </div>
-        </div>
-    </section>
-    <!-- Contacto -->
-    <section id="contacto">
-        <h2>Contacto</h2>
-        <div class="contacto-container">
-            <p>Estoy siempre abierto a aprender, además estoy buscando mi primera oportunidad como desarrollador BackEnd y/o FrontEnd! Si crees que mi perfil se adapta con lo que buscas, ¡no dudes en contactarme!</p>
-            <div class="contacto-icons">
-                <a href="mailto:enrissmuelo@gmail.com">
-                    <div>
-                        <i class="fas fa-envelope"></i>
-                        <p>Email</p>
+            <h2>Tech Skils</h2>
+            <div class="habilidades-container">
+                <div data-aos="fade-up" data-aos-duration="300" class="technologies">
+                    <div class="technologies-image">
+                        <img src="https://img.icons8.com/color/480/000000/nodejs.png" alt="NodeJs">
                     </div>
-                </a>
-                <a href="https://www.linkedin.com/in/samuelOnti/" target="_blank" title="linkedin">
-                    <div>
-                        <i class="fab fa-linkedin"></i>
-                        <p>LinkedIn</p>
+                    <h4>NodeJs</h4>
+                </div>
+                <div data-aos="fade-up" data-aos-duration="600" class="technologies">
+                    <div class="technologies-image">
+                        <img src="https://img.icons8.com/color/480/000000/mongodb.png" alt="MongoDB">
                     </div>
-                </a>
-            </div>
-        </div>
-    </section>
-    <!-- Footer -->
-    <footer>
-        <div class="footer-container">
-            <p>Never stop learning!! - <span id="year"></span></p>
-        </div>
-    </footer>
-    </div>
+                    <h4>MongoDB</h4>
+                </div>
+                <div data-aos="fade-up" data-aos-duration="900" class="technologies">
+                    <div class="technologies-image">
+                        <img src="https://img.icons8.com/color/480/000000/html-5--v1.svg" alt="Html5">
+                    </div>
+                    <h4>HTML5</h4>
+                </div>
+                <div data-aos="fade-up" data-aos-duration="1200" class="technologies">
+                    <div class="technologies-image">
+                        <img src="https://img.icons8.com/color/480/000000/css3.png" alt="Css">
+                    </div>
+                    <h4>CSS</h4>
+                </div>
+                <div data-aos="fade-up" data-aos-duration="1500" class="technologies">
+                    <div class="technologies-image">
+                        <img src="https://img.icons8.com/color/480/000000/javascript--v1.png" alt="Javascript">
+                    </div>
+                    <h4>JavaScript</h4>
+                </div>
+                <div data-aos="fade-up" data-aos-duration="1800" class="technologies">
+                    <div class="technologies-image">
+                        <img src="https://img.icons8.com/color/480/000000/angularjs.png" alt="Angularjs">
+                    </div>
+                    <h4>AngularJs</h4>
+                </div>
+                <div data-aos="fade-up" data-aos-duration="300" class="technologies">
+                    <div class="technologies-image">
+                        <img src="https://img.icons8.com/color/480/000000/git.png" alt="Git">
+                    </div>
+                    <h4>Git</h4>
+                </div>
+                <div data-aos="fade-up" data-aos-duration="600" class="technologies">
+                    <div class="technologies-image">
+                        <img src="https://img.icons8.com/plasticine/480/000000/github.png" alt="Github">
+                    </div>
+                    <h4>Github</h4>
+                </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
-    <script src="./js/app.js "></script>
+                <div data-aos="fade-up" data-aos-duration="900" class="technologies">
+                    <div class="technologies-image">
+                        <img src="https://img.icons8.com/ios-filled/480/000000/jquery.png" alt="Jquery">
+                    </div>
+                    <h4>Jquery</h4>
+                </div>
+                <div data-aos="fade-up" data-aos-duration="1200" class="technologies">
+                    <div class="technologies-image">
+                        <img src="https://img.icons8.com/color/480/000000/npm.png" alt="Npm">
+                    </div>
+                    <h4>Npm</h4>
+                </div>
+                <div data-aos="fade-up" data-aos-duration="1500" class="technologies">
+                    <div class="technologies-image">
+                        <img src="https://img.icons8.com/color/480/000000/java-coffee-cup-logo--v1.png" alt="Java">
+                    </div>
+                    <h4>Java</h4>
+                </div>
+                <div data-aos="fade-up" data-aos-duration="1800" class="technologies">
+                    <div class="technologies-image">
+                        <img src="https://img.icons8.com/office/480/000000/mysql.png" alt="mysql">
+                    </div>
+                    <h4>Mysql</h4>
+                </div>
+            </div>
+        </section>
+        <!-- Contacto -->
+        <section id="contacto" class="contacto">
+            <h2>Contacto</h2>
+            <div class="contacto-container">
+                <p>Estoy siempre abierto a aprender, además estoy buscando mi primera oportunidad como desarrollador BackEnd y/o FrontEnd! Si crees que mi perfil se adapta con lo que buscas, ¡no dudes en contactarme!</p>
+                <div class="contacto-icons">
+                    <a href="mailto:enrissmuelo@gmail.com">
+                        <div>
+                            <i class="fas fa-envelope"></i>
+                            <p>Email</p>
+                        </div>
+                    </a>
+                    <a href="https://www.linkedin.com/in/samuelOnti/" target="_blank" title="linkedin">
+                        <div>
+                            <i class="fab fa-linkedin"></i>
+                            <p>LinkedIn</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <!-- Footer -->
+        <footer>
+            <div class="footer-container">
+                <p>Never stop learning!! - <span id="year"></span></p>
+            </div>
+        </footer>
+
+
 </body>
 
 </html>
