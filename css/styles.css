@@ -632,7 +632,7 @@ footer {
     text-align: center;
 }
 
-@media (min-width: 360px) {
+@media (max-width: 360px) {
     .about-text-container>p {
         margin-top: 20px;
     }
@@ -641,14 +641,14 @@ footer {
         margin: 15rem auto 12rem auto;
     }
     .project {
-        width: 73%;
+        width: 95%;
     }
     .project-img-container {
         top: 3%;
         height: 70%;
     }
     .project-links a {
-        font-size: 5rem;
+        font-size: 2rem;
         transition: color .3s ease;
     }
 }
