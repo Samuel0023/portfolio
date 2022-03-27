@@ -44,6 +44,8 @@ function scrollDistance(e, element) {
     e.preventDefault();
     let hash = element.getAttribute("href");
     let target = document.querySelector(hash);
+
+
     let headerOffset = 100;
     let elementPosition = target.offsetTop;
     let offsetPosition = elementPosition - headerOffset;
@@ -198,4 +200,41 @@ particlesJS({
     retina_detect: true,
 });
 
-//langs
+const git1 = document.getElementById("git-1");
+
+const git2 = document.getElementById("git-2");
+const git3 = document.getElementById("git-3");
+const git4 = document.getElementById("git-4");
+const git5 = document.getElementById("git-5");
+const git6 = document.getElementById("git-6");
+
+git1.addEventListener("click", function onClick() {
+    window.open("https://github.com/Samuel0023/matrix", '_blank');
+});
+
+git2.addEventListener("click", function onClick() {
+    window.open("https://github.com/Samuel0023/RESTserver", '_blank');
+});
+git3.addEventListener("click", function onClick() {
+    window.open("https://github.com/Samuel0023/chat_with_nodJS", '_blank');
+});
+git4.addEventListener("click", function onClick() {
+    window.open("https://github.com/Samuel0023/Clima-app", '_blank');
+});
+git5.addEventListener("click", function onClick() {
+    window.open("https://github.com/Samuel0023/to-do.app", '_blank');
+});
+git6.addEventListener("click", function onClick() {
+    window.open("https://github.com/Samuel0023", '_blank');
+});
+
+const dep1 = document.getElementById('dep-1');
+const dep2 = document.getElementById('dep-2');
+
+
+dep1.addEventListener("click", function onClick() {
+    window.open("https://matrix-flax.vercel.app", '_blank');
+});
+dep2.addEventListener("click", function onClick() {
+    window.open("https://sams-proyect.herokuapp.com", '_blank');
+});
