@@ -632,7 +632,7 @@ footer {
     text-align: center;
 }
 
-@media (max-width: 360px) {
+@media (min-width: 340px) {
     .about-text-container>p {
         margin-top: 20px;
     }
