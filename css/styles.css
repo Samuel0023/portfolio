@@ -5,6 +5,7 @@
     --dark: #0a0a0a;
     --light: #f0f0f0;
     --text: #413737e6;
+    --text-secondary: #3498DB;
 }
 
 *,
@@ -297,8 +298,8 @@ ul {
 }
 
 .about-text-container>p span {
-    color: var(--secondary);
-    font-weight: 500;
+    color: var(--text-secondary);
+    font-weight: 800;
 }
 
 
@@ -349,7 +350,7 @@ ul {
 
 .project-img-container {
     position: absolute;
-    top: 0;
+    top: 2%;
     left: 0;
     height: 75%;
     transition: all 1s ease;
@@ -449,15 +450,15 @@ ul {
 }
 
 
-/* Habilidades */
+/* skills */
 
-.habilidades {
+.skills {
     padding: 4rem 0;
     position: relative;
     margin: 5rem auto;
 }
 
-.habilidades>h2 {
+.skills>h2 {
     color: var(--primary);
     text-transform: uppercase;
     margin-bottom: 5rem;
@@ -467,7 +468,7 @@ ul {
     position: relative;
 }
 
-.habilidades>h2::after {
+.skills>h2::after {
     content: '';
     width: 70%;
     height: 5px;
@@ -478,7 +479,7 @@ ul {
     border-radius: 10px;
 }
 
-.habilidades-container {
+.skills-container {
     width: 90%;
     margin: 0 auto;
     display: grid;
@@ -531,14 +532,14 @@ ul {
 }
 
 
-/* Contacto */
+/* Contact */
 
-.contacto {
+.contact {
     position: relative;
     margin: 5rem auto 3rem auto;
 }
 
-.contacto>h2 {
+.contact>h2 {
     color: var(--primary);
     text-transform: uppercase;
     margin-bottom: 3rem;
@@ -548,7 +549,7 @@ ul {
     position: relative;
 }
 
-.contacto>h2::after {
+.contact>h2::after {
     content: '';
     width: 56%;
     height: 5px;
@@ -559,25 +560,25 @@ ul {
     border-radius: 10px;
 }
 
-.contacto-container {
+.contact-container {
     width: 90%;
     margin: 0 auto;
 }
 
-.contacto-container>p {
+.contact-container>p {
     font-size: 1.25rem;
     color: var(--text);
     font-weight: 500;
     text-align: center;
 }
 
-.contacto-icons {
+.contact-icons {
     display: flex;
     flex-direction: column;
     /* justify-content: space-between; */
 }
 
-.contacto-icons a {
+.contact-icons a {
     margin-top: 1.5rem;
     padding: 1rem;
     display: flex;
@@ -587,16 +588,16 @@ ul {
     border-radius: 12px;
 }
 
-.contacto-icons a div {
+.contact-icons a div {
     text-align: center;
 }
 
-.contacto-icons a div i {
+.contact-icons a div i {
     font-size: 2.3rem;
     color: var(--secondary);
 }
 
-.contacto-icons a div p {
+.contact-icons a div p {
     margin-top: .5rem;
     font-size: 1.2rem;
     font-weight: 500;
@@ -604,7 +605,7 @@ ul {
     text-align: center;
 }
 
-.contacto-icons a:hover {
+.contact-icons a:hover {
     -webkit-box-shadow: -1px 2px 7px 0px rgba(0, 0, 0, 0.75);
     -moz-box-shadow: -1px 2px 7px 0px rgba(0, 0, 0, 0.75);
     box-shadow: -1px 2px 7px 0px rgba(0, 0, 0, 0.75);
@@ -629,6 +630,17 @@ footer {
     color: var(--primary);
     font-weight: 400;
     text-align: center;
+}
+
+@media (min-width: 360px) {
+    .projects {
+        position: relative;
+        margin: 15rem auto 12rem auto;
+    }
+    .project-img-container {
+        top: 3%;
+        height: 70%;
+    }
 }
 
 @media (min-width: 426px) {
@@ -701,6 +713,10 @@ footer {
         margin: 4rem auto;
     }
     /* project */
+    .projects {
+        position: relative;
+        margin: 15rem auto 12rem auto;
+    }
     .projects-container {
         width: 80%;
     }
@@ -725,40 +741,40 @@ footer {
     .project-tools>li {
         font-size: 1rem;
     }
-    /* Habilidades */
+    /* skills */
     .projects>h2::after {
         left: 33%;
         width: 34%;
     }
-    .habilidades>h2::after {
+    .skills>h2::after {
         width: 34%;
         left: 33%;
     }
-    .habilidades-container {
+    .skills-container {
         grid-template-columns: repeat(4, 1fr);
     }
-    /* Contacto */
-    .contacto>h2::after {
+    /* Contact */
+    .contact>h2::after {
         width: 30%;
         left: 35%;
     }
-    .contacto-container {
+    .contact-container {
         width: 80%;
     }
-    .contacto-icons {
+    .contact-icons {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
     }
-    .contacto-icons a {
+    .contact-icons a {
         margin-top: 2rem;
         width: 47%;
         padding: 1.5rem;
     }
-    .contacto-icons a div i {
+    .contact-icons a div i {
         font-size: 2.8rem;
     }
-    .contacto-icons a div p {
+    .contact-icons a div p {
         margin-top: .8rem;
         font-size: 1.5rem;
     }
@@ -917,7 +933,6 @@ footer {
         font-size: 1.5rem;
         font-weight: 400;
     }
-    /* Habilidades */
     .projects {
         position: relative;
         margin: 15rem auto 12rem auto;
@@ -962,20 +977,20 @@ footer {
     .skew-projects {
         height: 50%;
     }
-    /* Habilidades */
-    .habilidades {
+    /* skills */
+    .skills {
         margin: 12rem auto 5rem auto;
     }
-    .habilidades>h2 {
+    .skills>h2 {
         margin-bottom: 7rem;
         padding-bottom: 1.5rem;
         font-size: 2.5rem;
     }
-    .habilidades>h2::after {
+    .skills>h2::after {
         width: 30%;
         left: 35%;
     }
-    .habilidades-container {
+    .skills-container {
         grid-template-columns: repeat(6, 1fr);
         gap: 2rem;
     }
@@ -999,16 +1014,16 @@ footer {
     .nextjs>img {
         margin-top: 10px;
     }
-    /* Contacto */
-    .contacto {
+    /* Contact */
+    .contact {
         margin: 5rem auto 7rem auto;
     }
-    .contacto>h2 {
+    .contact>h2 {
         margin-bottom: 5rem;
         padding-bottom: 1.5rem;
         font-size: 2.5rem;
     }
-    .contacto>h2::after {
+    .contact>h2::after {
         left: 38%;
         width: 24%;
     }
@@ -1073,7 +1088,7 @@ footer {
     .about-text-container>h2 {
         margin: 3rem 0;
     }
-    /* Habilidades */
+    /* skills */
     .projects>h2::after {
         width: 12%;
         left: 44%;
@@ -1084,17 +1099,17 @@ footer {
         gap: 3rem;
         grid-template-columns: repeat(2, 1fr);
     }
-    /* Habilidades */
-    .habilidades>h2::after {
+    /* skills */
+    .skills>h2::after {
         width: 16%;
         left: 42%;
     }
-    .habilidades-container {
+    .skills-container {
         max-width: 1160px;
         width: 80%;
     }
-    /* Contacto */
-    .contacto-container {
+    /* Contact */
+    .Contact-container {
         max-width: 900px;
         width: 80%;
     }

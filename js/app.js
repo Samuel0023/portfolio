@@ -1,17 +1,14 @@
 // Aos
-
 AOS.init({
     duration: 2000,
 });
-// typing
-// hero-styles
 
 // hero-styles
 const likes = [
-    "aprender nuevas cosas",
-    "resolver problemas",
-    "trabajar en equipo",
-    "desarrollar soluciones"
+    "learn new things",
+    "solve problems",
+    "work in a team",
+    "design solutions"
 ];
 let i = 0;
 
@@ -27,11 +24,6 @@ like();
 
 setInterval(like, 1500);
 
-// Year
-const span = document.getElementById("year");
-const year = new Date();
-span.innerHTML = `${year.getFullYear()}`;
-
 // Menu Mobile
 const barra = document.getElementById("btnMenu");
 const menuSide = document.querySelector(".menu-side");
@@ -44,8 +36,8 @@ barra.addEventListener("click", function() {
 
 const startMenu = document.getElementById("start-menu");
 const aboutMeMenu = document.getElementById("about-me-menu");
-const proyectsMenu = document.getElementById("proyects-menu");
-const habilityMenu = document.getElementById("hability-menu");
+const projectsMenu = document.getElementById("projects-menu");
+const skillMenu = document.getElementById("skill-menu");
 const contactMenu = document.getElementById("contact-menu");
 
 function scrollDistance(e, element) {
@@ -73,11 +65,11 @@ startMenu.addEventListener("click", (e) => {
 aboutMeMenu.addEventListener("click", (e) => {
     scrollToReference(e, aboutMeMenu);
 });
-proyectsMenu.addEventListener("click", (e) => {
-    scrollToReference(e, proyectsMenu);
+projectsMenu.addEventListener("click", (e) => {
+    scrollToReference(e, projectsMenu);
 });
-habilityMenu.addEventListener("click", (e) => {
-    scrollToReference(e, habilityMenu);
+skillMenu.addEventListener("click", (e) => {
+    scrollToReference(e, skillMenu);
 });
 contactMenu.addEventListener("click", (e) => {
     scrollToReference(e, contactMenu);
@@ -86,8 +78,8 @@ contactMenu.addEventListener("click", (e) => {
 //Scroll
 const start = document.querySelectorAll(".start");
 const aboutMe = document.querySelectorAll(".aboutMe");
-const proyects = document.querySelectorAll(".proyects");
-const hability = document.querySelectorAll(".hability");
+const projects = document.querySelectorAll(".projects");
+const skill = document.querySelectorAll(".skill");
 const contact = document.querySelectorAll(".contact");
 
 start.forEach((st) => {
@@ -102,13 +94,13 @@ aboutMe.forEach((st) => {
     });
 });
 
-proyects.forEach((st) => {
+projects.forEach((st) => {
     st.addEventListener("click", (e) => {
         scrollDistance(e, st);
     });
 });
 
-hability.forEach((st) => {
+skill.forEach((st) => {
     st.addEventListener("click", (e) => {
         scrollDistance(e, st);
     });
@@ -201,7 +193,9 @@ particlesJS({
                 rotateX: 600,
                 rotateY: 1200,
             },
-        },
+        }
     },
     retina_detect: true,
 });
+
+//langs
