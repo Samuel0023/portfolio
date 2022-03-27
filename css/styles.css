@@ -633,9 +633,15 @@ footer {
 }
 
 @media (min-width: 360px) {
+    .about-text-container>p {
+        margin-top: 20px;
+    }
     .projects {
         position: relative;
         margin: 15rem auto 12rem auto;
+    }
+    .project {
+        width: 73%;
     }
     .project-img-container {
         top: 3%;
