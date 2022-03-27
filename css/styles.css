@@ -647,6 +647,10 @@ footer {
         top: 3%;
         height: 70%;
     }
+    .project-links a {
+        font-size: 5rem;
+        transition: color .3s ease;
+    }
 }
 
 @media (min-width: 426px) {
