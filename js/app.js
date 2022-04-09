@@ -216,7 +216,7 @@ git2.addEventListener("click", function onClick() {
     window.open("https://github.com/Samuel0023/RESTserver", '_blank');
 });
 git3.addEventListener("click", function onClick() {
-    window.open("https://github.com/Samuel0023/chat_with_nodJS", '_blank');
+    window.open("https://github.com/Samuel0023/Websocket-server", '_blank');
 });
 git4.addEventListener("click", function onClick() {
     window.open("https://github.com/Samuel0023/Clima-app", '_blank');
@@ -230,6 +230,7 @@ git6.addEventListener("click", function onClick() {
 
 const dep1 = document.getElementById('dep-1');
 const dep2 = document.getElementById('dep-2');
+const dep3 = document.getElementById('dep-3');
 
 
 dep1.addEventListener("click", function onClick() {
@@ -237,4 +238,8 @@ dep1.addEventListener("click", function onClick() {
 });
 dep2.addEventListener("click", function onClick() {
     window.open("https://sams-proyect.herokuapp.com", '_blank');
+});
+
+dep3.addEventListener("click", function onClick() {
+    window.open("https://chat-with-sockets-samuel.herokuapp.com", '_blank');
 });
