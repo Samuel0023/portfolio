@@ -243,3 +243,15 @@ dep2.addEventListener("click", function onClick() {
 dep3.addEventListener("click", function onClick() {
     window.open("https://chat-with-sockets-samuel.herokuapp.com", '_blank');
 });
+
+
+const mail = document.getElementById('mail');
+const linkedin = document.getElementById('linkedin');
+
+mail.addEventListener("click", function onClick() {
+    window.open("mailto:enrissmuelo@gmail.com", "_blank");
+});
+
+linkedin.addEventListener("click", function onClick() {
+    window.open("https://www.linkedin.com/in/samuelOnti/", "_blank");
+});
