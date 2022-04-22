@@ -207,6 +207,7 @@ const git3 = document.getElementById("git-3");
 const git4 = document.getElementById("git-4");
 const git5 = document.getElementById("git-5");
 const git6 = document.getElementById("git-6");
+const git7 = document.getElementById("git-7")
 
 git1.addEventListener("click", function onClick() {
     window.open("https://github.com/Samuel0023/matrix", '_blank');
@@ -228,9 +229,13 @@ git6.addEventListener("click", function onClick() {
     window.open("https://github.com/Samuel0023", '_blank');
 });
 
+git7.addEventListener("click", function onClick() {
+    window.open("https://github.com/Samuel0023/socket-colas", '_blank');
+});
 const dep1 = document.getElementById('dep-1');
 const dep2 = document.getElementById('dep-2');
 const dep3 = document.getElementById('dep-3');
+const dep7 = document.getElementById('dep-7');
 
 
 dep1.addEventListener("click", function onClick() {
@@ -242,6 +247,10 @@ dep2.addEventListener("click", function onClick() {
 
 dep3.addEventListener("click", function onClick() {
     window.open("https://chat-with-sockets-samuel.herokuapp.com", '_blank');
+});
+
+dep7.addEventListener("click", function onClick() {
+    window.open("https://tickets-queue-samuel.herokuapp.com", '_blank');
 });
 
 
