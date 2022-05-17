@@ -217,7 +217,7 @@ git2.addEventListener("click", function onClick() {
     window.open("https://github.com/Samuel0023/RESTserver", '_blank');
 });
 git3.addEventListener("click", function onClick() {
-    window.open("https://github.com/Samuel0023/Websocket-server", '_blank');
+    window.open("https://github.com/Samuel0023/Socket-Authentification-server", '_blank');
 });
 git4.addEventListener("click", function onClick() {
     window.open("https://github.com/Samuel0023/Clima-app", '_blank');
